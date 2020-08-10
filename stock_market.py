@@ -22,7 +22,7 @@ REF: https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices?filterSelection=
 
 """
 # My API key.
-qd_api.ApiConfig.api_key = 'qNJwrfms5zNB77vk4qkw'
+qd_api.ApiConfig.api_key = '####################'
 
 
 def get_latest_data(code, name, code_name):

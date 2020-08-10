@@ -1,5 +1,4 @@
 # quandal_api
-
 Get millions of financial and economic datasets from hundreds of publishers via a single free API.
 The source for financial, economic, and alternative datasets, serving investment professionals.
 

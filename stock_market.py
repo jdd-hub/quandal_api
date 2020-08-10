@@ -22,9 +22,11 @@ REF: https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices?filterSelection=
 
 """
 # My API key.
-qd_api.ApiConfig.api_key = '####################'
+qd_api.ApiConfig.api_key = 'qNJwrfms5zNB77vk4qkw'
+
 
 def get_latest_data(code, name, code_name):
+
     # Execute payload request.
     api_data = qd_api.get(code)
 
@@ -49,6 +51,7 @@ def get_latest_data(code, name, code_name):
 
 
 def get_markets():
+
     pd_stocks = []
     for lab, row in pd_markets.iterrows():
         pd_stocks.append(get_latest_data("EOD/" + row["code"], row["name"], row["code"]))
@@ -61,13 +64,13 @@ def get_markets():
             r'/Users/julianmuscatdoublesin/PycharmProjects/PythonLibrary/ds_quandal/stock_market_eod.csv',
             index=False, header=True)
 
-    return pd_stocks
+    return pd_markets_concat
 
 
 # The list of codes required by the API.
 lst_code = ["DIS", "MSFT", "INTC", "IBM", "AAPL", "MMM", "PFE", "JNJ", "PG", "NKE"]
 
-# List of names as a referance to each code.
+# List of names as a reference to each code.
 lst_names = ["The Walt Disney Company (DIS)",
              "Microsoft Corporation (MSFT)", "Intel Corporation (INTC)",
              "International Business Machines Corporation (IBM)", "Apple Inc. (AAPL)",
@@ -83,7 +86,7 @@ dict_markets = {
 # Converts the data dictionary to a DataFrame.
 pd_markets = pd.DataFrame(dict_markets)
 
-# Created anf sequential list of numbers to be used as an index for the DataFrame.
+# Created a sequential list of numbers to be used as an index for the DataFrame.
 row_labels = np.arange(10)
 
 # Specify row labels for the DataFrame.
@@ -95,6 +98,6 @@ api_data = get_markets()
 # Display returned payload for verification.
 print("")
 print(api_data)
-print("Keys: " + api_data.keys())
+print(api_data.keys())
 print("Size: " + str(api_data.size))
 print("Shape: " + str(api_data.shape))

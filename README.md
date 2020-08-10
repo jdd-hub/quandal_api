@@ -1,14 +1,14 @@
-# quandal_api
+# quandl_api
 Get millions of financial and economic datasets from hundreds of publishers via a single free API.
 The source for financial, economic, and alternative datasets, serving investment professionals.
 
-To visual data, you need high quality, credible and accurate data sources. Quandal provides and an array of data sets for personal (free) and professional use. 
+To visual data, you need high quality, credible and accurate data sources. Quandl provides and an array of data sets for personal (free) and professional use. 
 
-As part of my Data Engineering professional development, I am developing an array of data pipelines which extract, tranform and load the data from various sources such as this Quandal API, CSV, JSON and database such as Google BigQuery, Microsft SQL Server and PostgreSQL, just to name a few. 
+As part of my Data Engineering professional development, I am developing an array of data pipelines which extract, tranform and load the data from various sources such as this Quandl API, CSV, JSON and database such as Google BigQuery, Microsft SQL Server and PostgreSQL, just to name a few. 
 
 Some pipelines are developed just for the purposes of my Data Engineering professional development. I practice working with a variety of data sources solving specific challenges that come as part of handling and building data pipelines from the ground up. 
 
-So far, I have developed two data pipelines using the Quandal API. 
+So far, I have developed two data pipelines using the Quandl API. 
 
 1. The first behive_stocks_in_united_kindom.py
 

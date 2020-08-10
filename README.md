@@ -31,4 +31,4 @@ This data pipeline is quite simple. It consists of the API key, followed by the 
 
 2. get_markets():
 
-The purpose of this function is to iterate through rows in a DataFrame containing the stock codes and descriptive name. The DataFrame in question pd_markets is built off, of a data dictionary that is built of two lists: codes and names. The stock code has an additional piece of code attached to it, required by the API "EOD". Each of the individual payload request (DataFrames) is appended to a list called pd_stocks. Finally, the list of stock DataFfames is Concatenated into one and saved to a CSV file.  
+The purpose of this function is to iterate through rows in a DataFrame containing the stock codes and descriptive name. The DataFrame in question pd_markets is built off, of a data dictionary that is built of two lists: codes and names. The stock code has an additional piece of code attached to it, required by the API "EOD". Each of the individual payload request (DataFrames) is appended to a list called pd_stocks. Finally, the list of stock DataFrames is Concatenated into one and saved to a CSV file.  
